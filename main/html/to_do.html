@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <title>진 바이 진</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="logo"><a href="main.html"><h1>進 by Jiin</h1></a></div>
+            </header>
+            <nav class="clear">
+                <ul>
+                    <li><a href="info.html" class="navblue">INFO</a></li>
+                    <li><a href="schedule.html" class="navblue">SCHEDULE</a></li>
+                    <li><a href="to_do.html" class="navblue">TO DO</a></li>
+                    <li><a href="memo.html" class="navblue">MEMO</a></li> <hr>
+                </ul>  <!--전체 적인 비율 수정 ㅋ ㅋ ㅋ ㅋ -->
+            </nav>
+            <aside>
+                <div>
+                    <a href="#"><img src="../img/up.png" width="50"></a>
+                </div>
+            </aside>
+        </div><br></br>
+        <main>
+            <div class="main">
+                <div class="content-wrap">
+                  <div class="content-left">
+                    <div class="main-wrap">
+                      <div id="main-day" class="main-day"></div>
+                      <div id="main-date" class="main-date"></div>
+                    </div>
+                    <div class="todo-wrap">
+                      <div class="todo-title">To do List</div>
+                      <div class="input-wrap">
+                        <input type="text" placeholder="please write here!!" id="input-box" class="input-box">
+                        <button type="button" id="input-data" class="input-data">INPUT</button>
+                        <div id="input-list" class="input-list"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-right">
+                    <table id="calendar" class="center">
+                      <thead>
+                        <tr class="btn-wrap clearfix">
+                          <td>
+                            <label id="prev">
+                                &#60;
+                            </label>
+                          </td>
+                          <td class="center" id="current-year-month" colspan="5"></td>
+                          <td>
+                            <label id="next">
+                                &#62;
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td class = "sun center">Sun</td>
+                            <td class=center>Mon</td>
+                            <td class="center">Tue</td>
+                            <td class="center">Wed</td>
+                            <td class="center">Thu</td>
+                            <td class="center">Fri</td>
+                            <td class= "sat center">Sat</td>
+                          </tr>
+                      </thead>
+                      <tbody id="calendar-body" class="calendar-body"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <script src="../js/to_do.js"></script>
+        </main>
+       
+    </body>
+    
+</html>
